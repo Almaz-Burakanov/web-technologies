@@ -6,11 +6,14 @@
   <body>
     <h1>Пример простой</h1>
     <script language = "JavaScript" type = "text/JavaScript">
-        function line(){
-            document.writeln("<hr align='center' width='100'>"); 
-        }
-        for (var i=0; i<10; i++)
-            line();
+      var a = 10;
+      function line(){
+          document.writeln(`<hr align='center' width='${a}'>`); 
+      }
+      for (var i=0; i<10; i++){
+        line();
+        a = a + 10;
+      }
     </script>
   </body>
 </html> 
