@@ -5,7 +5,8 @@
   </head>
   <body>
     <script charset="UTF-8" language="JavaScript" type="text/JavaScript">
-      var x, y;
+      var x, y, user_pass;
+      var pass = "admin";
       x=parseInt(prompt("Введите значение х",'')); 
       y=parseInt(prompt("Введите значение у",''));
       if (x == y){
@@ -16,6 +17,13 @@
       }
       else{
         alert(" Максимальное число - x");
+      }
+      user_pass = prompt("Введите пароль",'');
+      if (pass == user_pass){
+        alert("Верный пароль!");
+      }
+      else{
+        alert("Неверный пароль!");
       }
     </script>
   </body>
