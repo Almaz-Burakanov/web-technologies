@@ -4,11 +4,14 @@
     <title>Бураканов Алмаз</title>
   </head>
   <body>
-    <script language="JavaScript" type="text/JavaScript">
+    <script charset="UTF-8" language="JavaScript" type="text/JavaScript">
       var x, y;
       x=parseInt(prompt("Введите значение х",'')); 
       y=parseInt(prompt("Введите значение у",''));
-      if(x<y){
+      if (x == y){
+        alert("Введенные числа равны!");
+      }
+      else if(x<y){
         alert(" Максимальное число - y");
       }
       else{
