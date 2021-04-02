@@ -1,14 +1,21 @@
 <html>
   <head>
-    <title>array</title>
+    <meta charset="UTF-8">
+    <title>Бураканов Алмаз</title>
+    <script language="javascript">
+      function arr(){
+        pr = new Array("Алгебра"," Геометрия"," Физика"," Информатика"," Русский язык"," Литература"," История");
+        tochn = pr.slice(0,4);
+        gum = pr.slice(4,7);
+        document.write("Точные науки - ", tochn);
+        document.write("<br>");
+        document.write("Гуманитарные науки - ", gum);
+      }
+    </script>
   </head>
   <body>
-    <script language="JavaScript">
-      year = new Array("декабрь","январь","февраль","март","апрель","май",
-      "июнь","июль","август","сентябрь","октябрь","ноябрь");
-      summer = new Array(); 
-      summer=year.slice(6,9);
-      document.write(summer+"<br>");
-    </script>
+    <script language="javascript">
+		  arr();
+		</script>
   </body>
 </html> 
